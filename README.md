@@ -18,5 +18,5 @@ This project is focused on building an amazing, responsive web page that showcas
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
 ## Contact
-For any questions or collaborations, contact us at [sairampanchak@example.com]
+For any questions or collaborations, contact us at [sairampanchak@gmail.com]
 
