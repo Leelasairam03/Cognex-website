@@ -1,12 +1,22 @@
-- 👋 Hi, I’m @Leelasairam03
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+## Description
+This project is focused on building an amazing, responsive web page that showcases our team's skills in web development and web applications. The page will be user-friendly, interactive, and visually appealing.
+## Tech Stack
+- Frontend: HTML, CSS, JavaScript 
+- Backend: Node.js/Flask/Django
+- Version Control: Git, GitHub
 
-<!---
-Leelasairam03/Leelasairam03 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+
+### Team Members
+- Team Lead: Sai ram
+-  Member 1: Abhinav P S
+-  Member 2: Lakshith
+-  Member 3: Kushi K T
+-  Member 4: Mithun
+-  Member 5: Vismaya
+
+## Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+## Contact
+For any questions or collaborations, contact us at [sairampanchak@example.com]
+
