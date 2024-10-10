@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognex Club | Interactive Line Tail Animation</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(135deg, #1a1a1a, #100606);
+            overflow: hidden;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .line-tail {
+            position: absolute;
+            height: 2px; /* Line thickness */
+            background-color: rgba(74, 227, 107, 0.7);
+            pointer-events: none;
+            transform-origin: left;
+            opacity: 0.8;
+            transition: transform 0.1s ease, opacity 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        let lastX = 0;
+        let lastY = 0;
+
+        document.addEventListener('mousemove', function(e) {
+            const lineTail = document.createElement('div');
+            lineTail.classList.add('line-tail');
+            document.body.appendChild(lineTail);
+
+            const dx = e.pageX - lastX; // Change in X
+            const dy = e.pageY - lastY; // Change in Y
+            const distance = Math.sqrt(dx * dx + dy * dy); // Distance between last and current mouse position
+            const angle = Math.atan2(dy, dx) * (180 / Math.PI); // Angle of movement
+
+            lineTail.style.width = distance + 'px'; // Set width to distance
+            lineTail.style.left = lastX + 'px';
+            lineTail.style.top = lastY + 'px';
+            lineTail.style.transform = `rotate(${angle}deg)`; // Rotate the line
+
+            setTimeout(() => {
+                lineTail.remove();
+            }, 300); // Duration for line visibility
+
+            lastX = e.pageX; // Update last mouse position
+            lastY = e.pageY;
+        });
+    </script>
+
+</body>
+</html>
